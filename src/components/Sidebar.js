@@ -19,10 +19,6 @@ export default function Sidebar({ title, list, loading, location, match }){
                 <h3 className="header">{title}</h3>
                 <ul className="sidebar-list">
                   { list.map((item) => {
-                    console.group();
-                    console.log(location);
-                    console.log(match);
-                    console.groupEnd();
                     return (
                     <CustomLink 
                       key={item}
