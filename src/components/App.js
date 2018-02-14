@@ -4,6 +4,8 @@ import NavBar from './NavBar';
 import Home from './Home';
 import Players from './Players';
 import Teams from './Teams';
+import TeamPage from './TeamPage';
+import Articles from './Articles';
 
 class App extends Component {
   render() {
@@ -15,6 +17,8 @@ class App extends Component {
           <Route  exact path="/" component={Home} />
           <Route  path="/teams" component={Teams} />
           <Route  path="/players" component={Players} />
+          <Route  exact path="/:teamId" component={TeamPage} />
+          <Route path={`/:teamId/articles/:articleId`} component={Articles} />
           <Route render={({ match }) => (<div>Couldn't find {window.location.href}</div>)} />
         </Switch>
       </div>
