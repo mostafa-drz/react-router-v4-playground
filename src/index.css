@@ -221,3 +221,16 @@
          margin: 5px;
      }
  }
+ 
+ .fade-enter {
+     opacity: 0;
+ }
+ 
+ .fade-ente.fade-enter-active {
+     opacity: 1;
+     transition: all 3s ease-in;
+ }
+ 
+ .fade-exit {
+     display: none;
+ }
