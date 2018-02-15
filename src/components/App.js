@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import NavBar from './NavBar';
-import Home from './Home';
-import Players from './Players';
-import Teams from './Teams';
-import TeamPage from './TeamPage';
-import Articles from './Articles';
+import { Home, Teams, TeamPage, Players, Articles } from './Routes';
 
 class App extends Component {
   render() {
